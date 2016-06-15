@@ -26,7 +26,7 @@ div img{
 }
 
 
-h1{
+h1, h2{
 	color:#33c9eb;
 }
 
@@ -47,8 +47,55 @@ body{
 
 footer{
 	position:fixed;
+	color:##051417;
 	left:0;
 	bottom:0;
 	width:100%;
 	background-color: #33c9eb;
+}
+
+/*Modal Window*/
+.modal{
+	display:none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #33c9eb;
+	overflow: auto;
+	background-color: rgba(5,20,23,0.4); /* Black w/ opacity */
+}
+
+.modal-content{
+	background-color: #ffffff;
+	margin: 2% auto;
+	padding: 20px;
+	border: 5px solid #33c9eb;
+	width: 50%;
+
+}
+
+.close{
+	color: #33c9eb;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+	color: #238ca4;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-img{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.modal-text{
+	display:block;
 }

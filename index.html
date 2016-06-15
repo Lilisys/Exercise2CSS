@@ -3,6 +3,7 @@
 	<head>
 		<link rel="stylesheet" href="style.css" type="text/css">
 		<title>JWu</title>
+		
 	</head>
 	
 
@@ -12,45 +13,61 @@
 		</div>
 
 		<div class="bigBox">
-			<p>This is a little project many artists on the internet have been doing</p>
+			<p>This is a little meme many artists on the internet have been posting, so I thought I'd join in as well.<br>
+				Click on the image for a short description!
+			</p>
+			
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			  <!-- Modal content -->
+			  <div class="modal-content">
+			    <span class="close">x</span>
+			    <div class="modal-img"></div>
+			    <p align="center" id="modal-text">Some text in the Modal..</p>
+			  </div>
+			</div>
+
 			<!-- Row 1 -->
 			<div class = "row">
 				<div class="imgSquare">
-					<img src="furiosa.jpg">
+					<img src="furiosa.jpg"  onclick="modalOpen('Furiosa from Mad Max', this.src)">
 				</div>
 				<div class="imgSquare">
-					<img src="widow.jpg">
+					<img src="widow.jpg" onclick="modalOpen('Black Widow from Avengers', this.src)">
 				</div>
 				<div class="imgSquare">
-					<img src="herm.jpg">
+					<img src="herm.jpg" onclick="modalOpen('Hermione from Harry Potter', this.src)">
 				</div>
 			</div>
+
 			<!-- Row 2 -->
 			<div class = "row">
 				<div class="imgSquare">
-					<img src="me.jpg">
+					<img src="me.jpg" onclick="modalOpen('Self Portrait 2016', this.src)">
 				</div>
 				<div class="imgSquare">
-					<img src="self.jpg">
+					<img src="self.jpg" onclick="modalOpen('It me', this.src)">
 				</div>
 				<div class="imgSquare">
-					<img src="raju.jpg">
+					<img src="raju.jpg" onclick="modalOpen('Raju the elephant, a charity work', this.src)">
 				</div>
 			</div>
+
 			<!-- Row 3 -->
 			<div class = "row">
 				<div class="imgSquare">
-					<img src="leia.jpg">
+					<img src="leia.jpg" onclick="modalOpen('Princess Leia in Star Wars Episode V', this.src)">
 				</div>
 				<div class="imgSquare">
-					<img src="brave.jpg">
+					<img src="brave.jpg" onclick="modalOpen('You Make Me Brave', this.src)">
 				</div>
 				<div class="imgSquare">
-					<img src="poe.jpg">
+					<img src="poe.jpg" onclick="modalOpen('Poe from Star Wars Episode VII', this.src)">
 				</div>
 			</div>
 		</div>
 		<!-- end bigBox -->
+		<script src="captions.js"></script>
 	</body>
 	<footer>
 		By: Jessica Wu
