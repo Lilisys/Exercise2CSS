@@ -2,6 +2,7 @@ var modal = document.getElementById('myModal');
 var span = document.getElementsByClassName("close")[0];
 console.log(span)
 
+//Open the window, add the image on the fly
 function modalOpen(text, source){
 	modal.style.display='block';
 	var newImg = document.createElement("img");
